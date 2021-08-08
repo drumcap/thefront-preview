@@ -31,14 +31,14 @@ const Hero = props => {
     <div className={clsx(classes.root, className)} {...rest}>
       <Grid
         container
-        justify="space-between"
+        justifyContent="space-between"
+        alignItems="center"
         spacing={4}
         direction={isMd ? 'row' : 'column-reverse'}
       >
         <Grid
           item
           container
-          alignItems="center"
           xs={12}
           md={6}
           data-aos={'fade-up'}
@@ -70,7 +70,7 @@ const Hero = props => {
         <Grid
           item
           container
-          justify="flex-start"
+          justifyContent="flex-start"
           alignItems="center"
           xs={12}
           md={6}
